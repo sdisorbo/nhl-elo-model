@@ -1,0 +1,8 @@
+Contents of each file...
+
+nhl_elo_model: This is a script to scrape nhl play by play data for a given season and run an elo model to the point of progress during the given season. It cleans the data, 
+preprocesses each NHL team's rolling metrics to adjust the initial ratings for each team, and then runs a nested for loop on each game to adjust the ratings on a game-by-game basis. 
+This runs in O(nlogn) time. 
+
+playoff_simulator: This is a script to run after getting a final dataframe from the nhl_elo_model script--you can input the 16 playoff teams for the given season and the script will
+simulate the playoffs 10,000 times and find each teams' probability of making each round based on their elo rating. 
